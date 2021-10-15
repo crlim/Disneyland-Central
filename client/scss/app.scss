@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+div {
+  // border-color: red;
+  // border-style: solid;
+  // border-width: 5px;
+}
+
+
+body {
+  background-image: url('https://static.onecms.io/wp-content/uploads/sites/20/2021/01/14/disneyland-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: orangered;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  height: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+
+  background-color: lightsalmon;
+  padding: 10px;
+
+  a {
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Roboto Slab';
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+  }
+  .active {
+    color: blue;
+  }
+
+}
+
+.page-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  width: 100%;
+
+  font-family: 'Roboto Slab';
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 50%;
+
+  .welcomeBox {
+    // display: flex;
+    // flex-direction: column;
+
+    // align-self: center;
+
+    background: rgba(245, 245, 245, 0.75);
+    height: 500px;
+    width: 800px;
+    margin-top: 50px;
+
+    img {
+      display: block;
+      max-height: 400px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.collection {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: lightblue;
+
+  width: 100%;
+}
+
+.ride {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 5px;
+
+  width: 97%;
+
+  background: white;
+  border-radius: 8px;
+
+  .rideName {
+    width: 45%;
+  }
+  .rideInfo {
+    width: 45%;
+  }
+
+  button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 90%;
+    background-color: #008CBA;
+    color: white;
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 8px;
+  }
+
+  span {
+    color: black;
+
+  }
+
+  .wait-time {
+    color: red;
+  }
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: lightblue;
+  width: 100%;
+
+  h2 {
+    color: black;
+  }
+
+  .shows-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: whitesmoke;
+    width: 90%;
+  }
+
+  img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .video {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    margin-bottom: 100px;
+
+    Iframe {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+}
+
+.blockout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: lightblue;
+  width: 100%;
+
+  padding-bottom: 20px;
+
+  .options{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    .blockoutBtn {
+      background-color: #008CBA;
+      font-size: 18px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      border-width: 0px;
+    }
+
+    .availabilityBtn {
+      background-color: #4CAF50;
+      font-size: 18px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      border-width: 0px;
+    }
+
+  }
+
+  .calendar {
+    background-color: white;
+    width: 90%;
+    .react-calendar__navigation {
+      span {
+        font-family: 'Roboto Slab';
+      }
+    }
+
+    .react-calendar__month-view__days{
+      button {
+        padding: 20px 40px;
+        background-color: white;
+        border-width: 1px;
+        border-color: lightgray;
+
+        abbr {
+          font-family: 'Roboto Slab';
+        }
+
+      }
+      button.blocked {
+        background-color: #008CBA;
+      }
+      button.available {
+        background-color: #4CAF50;
+      }
+
+      button.blockedavailable {
+        background-color: purple;
+      }
+
+    }
+  }
+}
