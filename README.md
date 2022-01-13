@@ -1,4 +1,4 @@
-# solo
+# Disneyland Central
 
 ## Description
 This was the solo project I worked on 10/12/21 through 10/14/21.  
